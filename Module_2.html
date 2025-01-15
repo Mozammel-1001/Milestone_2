@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles/Module_2.css">
+    <style>
+        /* Flexbox Styles */
+        .flexbox-container {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            background-color: slateblue;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .flexbox-container2 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .item {
+            width: 200px;
+            height: 100px;
+            background-color: aquamarine;
+            border: 2px solid tomato;
+        }
+
+        /* Grid Styles */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 200px) 50px 50px;
+            gap: 20px;
+            margin: 20px auto;
+        }
+
+
+        #box-1 {
+            grid-row: span 5;
+        }
+
+        #box-11,
+        #box-12 {
+            grid-column: span 3;
+        }
+
+        @media screen and (max-width: 576px) {
+            .flexbox-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Flexbox -->
+    <h2>Flexible Flex</h2>
+    <div class="flexbox-container">
+        <div class="box">
+            <h3>First Box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit explicabo ipsum voluptates totam nisi,
+                inventore, fuga, laboriosam corporis ipsam rem voluptate illum esse atque iusto. Commodi incidunt
+                adipisci repellendus sit!</p>
+        </div>
+        <div class="box">
+            <h3>Second Box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit explicabo ipsum voluptates totam nisi,
+                inventore, fuga, laboriosam corporis ipsam rem voluptate illum esse atque iusto. Commodi incidunt
+                adipisci repellendus sit!</p>
+        </div>
+    </div>
+    <div class="flexbox-container2">
+        <div class="item">Item - 1</div>
+        <div class="item">Item - 2</div>
+        <div class="item">Item - 3</div>
+        <div class="item">Item - 4</div>
+        <div class="item">Item - 5</div>
+        <div class="item">Item - 6</div>
+        <div class="item">Item - 7</div>
+        <div class="item">Item - 8</div>
+        <div class="item">Item - 9</div>
+        <div class="item">Item - 10</div>
+    </div>
+
+    <!-- Collage -->
+    <section>
+        <h1>My Picture Collage</h1>
+        <div class="row">
+            <img src="images/A.jpg" alt="">
+        </div>
+        <div class="row">
+            <div>
+                <img src="images/B.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/C.jpg" alt="">
+            </div>
+            <div class="vertical-collage">
+                <img src="images/D.jpg" alt="">
+                <img src="images/E.jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <img src="images/F.jpg" alt="">
+            </div>
+            <div class="square-collage">
+                <img src="images/G.jpg" alt="">
+                <img src="images/G.jpg" alt="">
+                <img src="images/G.jpg" alt="">
+                <img src="images/G.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/H.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Grid -->
+    <div class="grid-container">
+        <div class="box" id="box-1">Box - 1</div>
+        <div class="box" id="box-2">Box - 2</div>
+        <div class="box" id="box-3">Box - 3</div>
+        <div class="box" id="box-4">Box - 4</div>
+        <div class="box" id="box-5">Box - 5</div>
+        <div class="box" id="box-6">Box - 6</div>
+        <div class="box" id="box-7">Box - 7</div>
+        <div class="box" id="box-8">Box - 8</div>
+        <div class="box" id="box-9">Box - 9</div>
+        <div class="box" id="box-10">Box - 10</div>
+        <div class="box" id="box-11">Box - 11</div>
+        <div class="box" id="box-12">Box - 12</div>
+    </div>
+
+    <!-- Layout -->
+    <section class="layout-container">
+        <header class="header">
+            <h3>The Header</h3>
+        </header>
+        <nav class="nav">
+            <ul>
+                <li><a href="">Nav 1</a></li>
+                <li><a href="">Nav 2</a></li>
+                <li><a href="">Nav 3</a></li>
+            </ul>
+        </nav>
+        <main class="main">
+            <!-- article*2>h3{Main Article $}+p>lorem -->
+            <article>
+                <h3>Main Article 1</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus unde, laborum delectus sit quod
+                    eos,
+                    veniam, assumenda saepe fugiat error adipisci accusantium exercitationem harum. Alias minima
+                    excepturi
+                    sequi numquam obcaecati!</p>
+            </article>
+            <article>
+                <h3>Main Article 2</h3>
+                <p>Numquam rem aspernatur aut corporis vitae dolore nihil cum aliquam iusto ratione vero, accusamus,
+                    quos
+                    ipsum hic quasi porro maxime laboriosam consequatur sequi maiores nisi ab nobis in? Vel, cupiditate.
+                </p>
+            </article>
+        </main>
+
+        <div class="sidebar">
+            <h4>Sidebar</h4>
+        </div>
+        <div class="advertise">
+            <h4>Advertise</h4>
+        </div>
+
+        <footer class="footer">
+            <h3>The Footer</h3>
+        </footer>
+    </section>
+</body>
+
+</html>

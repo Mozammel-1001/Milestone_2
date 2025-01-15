@@ -1,0 +1,185 @@
+/*
+To design a webpage, the following steps should be followed-
+1. Find the HTML elements in it
+2. By clicking on the font find the font name and then from google fonts import it at CSS file
+3. Write the HTML code and give them different ID's and classes to design them
+4. By using device.io find device width and the percentage of the give .fig file
+5. To design padding, margin, font, color grading etc. click on the respected items and use the code from Pixso website.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* font-family: "Work Sans", serif; */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    padding: 17px 26px 17px 26px;
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+    border-radius: 6px;
+    background: rgb(82, 195, 3);
+    border: none;
+    cursor: pointer;
+}
+
+.btn_container {
+    text-align: center;
+}
+
+#hero {
+    /* background-color: tomato; */
+    /* background-image: url("../assets/hero-bg.png"); */
+    background: linear-gradient(0.00deg, rgb(9, 9, 9) 2.884%, rgba(16, 16, 16, 0) 101.034%), url("../assets/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 735px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero .hero_content {
+    width: 818px;
+    /* margin-right: auto; */
+    /* margin-left: auto; */
+    /* margin: 0 auto; */
+    /* Instead of this we used flexbox property in #hero to align it at center */
+}
+
+#hero .hero_content .subtitle {
+    opacity: 0.8;
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+#hero .hero_content .title {
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 51px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 19px;
+}
+
+#hero .hero_content .description {
+    opacity: 0.7;
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+#card_box {
+    width: 1056px;
+    height: 594px;
+    margin: 134px 147px 240px 240px;
+}
+
+#card_box .info {}
+
+#card_box .title {
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+#card_box .subtitle {
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+    opacity: 0.6;
+    margin-bottom: 13px;
+}
+
+.card_container {
+    margin-top: 38px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    max-width: 339px;
+    /* max-height: 226px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .image_box {
+    width: 339px;
+    /* height: 226px; */
+}
+
+.card .image_box img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+.card .shop {
+    /* text-align: center; */
+    /* Instead of this we used flexbox property in #hero to align it at center */
+    border-radius: 6px;
+    background: rgba(82, 195, 3, 0.15);
+    padding: 11px 26px 11px 26px;
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 26px;
+    margin-bottom: 19px;
+}
+
+#card_box .card_container .card_title {
+    margin-bottom: 19px;
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 47px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+#card_box .card_container .card_subtitle{
+    opacity: 0.7;
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 51px;
+}
