@@ -253,7 +253,6 @@ input[type="email"],
     color: #757575;
 }
 
-
 /* Media Query for Small Devices */
 @media screen and (max-width: 576px) {
 
@@ -354,7 +353,9 @@ input[type="email"],
     .download {
         margin-bottom: 20px;
     }
-
+    .contact {
+        margin-bottom: 20px;
+    }
     /* Footer Style */
     .footer {
         padding: 30px 20px;
