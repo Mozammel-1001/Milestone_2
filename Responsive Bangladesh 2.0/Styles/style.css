@@ -805,7 +805,7 @@ footer hr {
     }
 
     .newsletter input[type="email"] {
-        width: calc(100% - 20px);
+        max-width: calc(100% - 22px);
         height: 43px;
         border: none;
         border-radius: 6px;
@@ -813,7 +813,7 @@ footer hr {
         
     }
     .email_input{
-        width: 290px;
+        width: 280px;
     }
 
     .newsletter input[type="submit"] {
