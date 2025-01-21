@@ -636,7 +636,7 @@ marquee {
 
     /* Footer Styles */
     .footer {
-        padding: 60px 15px;
+        padding: 60px 15px 100px;
     }
 
     .footer-columns {
@@ -838,7 +838,7 @@ marquee {
     }
 
     .story-heading {
-        margin: 35px auto 30px 15px;
+        margin: 35px 30px 30px;
     }
 
     .story-btn {
@@ -859,7 +859,7 @@ marquee {
 
     /* Footer Styles */
     .footer {
-        padding: 60px 15px;
+        padding: 60px 15px 100px;
     }
 
     .footer-columns {
