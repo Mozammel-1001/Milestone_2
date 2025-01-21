@@ -135,6 +135,14 @@
     position: absolute;
 }
 
+/* Marquee Styles */
+marquee {
+    color: #808080;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
 /* Banner Styles */
 .banner {
     display: flex;
@@ -196,6 +204,7 @@
 }
 
 .curriculum-card1 {
+    flex: 1;
     text-align: center;
     border-radius: 18px;
     border: none;
@@ -205,6 +214,7 @@
 }
 
 .curriculum-card2 {
+    flex: 1;
     text-align: center;
     border-radius: 18px;
     border: none;
@@ -214,6 +224,7 @@
 }
 
 .curriculum-card3 {
+    flex: 1;
     text-align: center;
     border-radius: 18px;
     border: none;
@@ -451,7 +462,7 @@
 }
 
 /* Responsive For Mobile Device */
-@media screen and (min-width:350px) and (max-width:576px) {
+@media screen and (max-width:576px) {
 
     /* Navigation Styles */
     .header nav {
