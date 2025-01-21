@@ -462,7 +462,7 @@ marquee {
 }
 
 /* Responsive For Mobile Device */
-@media screen and (max-width:576px) {
+@media screen and (min-width:361px) and (max-width:576px) {
 
     /* Navigation Styles */
     .header nav {
@@ -685,7 +685,7 @@ marquee {
 }
 
 /* Responsive for X-Small Devices */
-@media screen and (max-width:350px) {
+@media screen and (max-width:361px) {
 
     /* Navigation Styles */
     .header nav {
